@@ -1,0 +1,19 @@
+# PickRepo — llms.txt
+
+PickRepo, GitHub’dan herkese açık depo bilgilerini okur ve statik sayfalarda gösteren bağımsız bir keşif aracıdır.
+
+## Sayfalar
+- / — Yükselenler, Popüler, Erken keşif ve kaynaklı rehber listeleri; proje arama, dil/konu filtreleri ve sıralama seçenekleri
+- /guides.html — Kaynaklı rehberler listesi
+- /guide/syncthing-syncthing.html — Seçtiğin klasördeki dosyaları, birbirine izin verdiğin cihazlarda aynı tutan bir uygulama. rehberi (Türkçe/İngilizce)
+- /guide/ollama-ollama.html — Yapay zekâ modellerini bilgisayarına indirip çalıştırabilen bir uygulama. Model, yanıt üretmek için kullanılan büyük bir veri dosyası gibi düşünülebilir. rehberi (Türkçe/İngilizce)
+- /guide/microsoft-markitdown.html — PDF ve Office gibi çeşitli dosyalardaki metni Markdown denen düz metin biçimine dönüştüren bir araç. rehberi (Türkçe/İngilizce)
+- /privacy.html — Gizlilik politikası
+- /terms.html — Kullanım koşulları
+- /sponsor.html — Sponsor bilgileri
+
+## Keşif puanı
+Puan, ziyaretçinin seçtiği ağırlıklara göre tarayıcıda hesaplanan bir sıralama yardımcısıdır. Arama uyumu, güncelleme tarihi, toplam yıldız/fork, proje yaşı ve GitHub proje bilgileri kullanılır. Kod çalıştırılmaz, güvenlik veya kod kalitesi değerlendirilmez. Tarihsel yıldız anlık görüntüleri tutulmadığı için yıldız kazanma hızı ölçülmez.
+
+## Hakkında
+Filtreler ve puan tercihleri tarayıcıda çalışır; hesaba, çereze veya sunucuya gönderilmez/kaydedilmez. PickRepo, GitHub ile bağlantılı değildir. Tüm içerik “şekli haliyle” sağlanır.

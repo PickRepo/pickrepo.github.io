@@ -1,0 +1,538 @@
+{
+  "projects": {
+    "syncthing/syncthing": {
+      "title": "Syncthing · Cihazlar arasında dosya eşitleme",
+      "what": "Dosyaları eşleştirdiğin cihazlar arasında senkronize etmeye yarayan bir araçtır.",
+      "use": "Kendi bilgisayarların arasında klasörleri güncel tutmak istediğinde değerlendirilebilir.",
+      "audience": "Cihazlarını eşleştirmeyi ve eşitleme ayarlarını yönetmeyi üstlenebilen kullanıcılar.",
+      "limits": "Silme işlemleri de eşitlenebilir; ayrı, sürümlü bir yedekleme planının yerine geçtiğini varsayma. Cihazların bağlantı ve platform desteğini kontrol et.",
+      "install": "Resmî indirme ve başlangıç belgelerinden platformuna uygun sürümü seç. Bu sitede kurulum denenmedi.",
+      "sources": [
+        {
+          "label": "Resmî SSS · eşitlemenin davranışı",
+          "url": "https://docs.syncthing.net/users/faq.html"
+        },
+        {
+          "label": "Resmî başlangıç rehberi",
+          "url": "https://docs.syncthing.net/intro/getting-started.html"
+        }
+      ],
+      "sourceCheckedAt": "2026-10-22",
+      "editorialReviewedAt": "2026-10-22",
+      "focus": "Cihazlar arasında dosya eşitleme",
+      "effort": "Cihaz eşleştirme ve ayrı yedek planı",
+      "media": []
+    },
+    "docmost/docmost": {
+      "title": "Docmost · Ekip wikisi ve dokümantasyon",
+      "what": "Kendi altyapında barındırabileceğin bir wiki ve dokümantasyon projesidir.",
+      "use": "Ekip belgelerini ve ortak bilgi tabanını yönetmek için değerlendirilebilir.",
+      "audience": "Kendi sunucusunun veritabanı, yedekleme ve güncelleme işlerini üstlenebilen ekipler.",
+      "limits": "PostgreSQL ve Redis gibi hizmetler gerekir. SSO, AI, denetim kayıtları gibi bazı özellikler kurumsal lisans gerektirir; bütün sürümlerin ücretsiz olduğunu varsayma.",
+      "install": "Resmî kurulum belgesi Docker Compose yolunu önerir. Örnek gizli anahtar ve parolaları değiştirmek, ters vekilde WebSocket desteğini sağlamak gerekir. Kurulum burada denenmedi.",
+      "sources": [
+        {
+          "label": "Resmî kurulum ve sürüm sınırları",
+          "url": "https://docmost.com/docs/installation/"
+        },
+        {
+          "label": "Kaynak depo",
+          "url": "https://github.com/docmost/docmost"
+        }
+      ],
+      "sourceCheckedAt": "2026-10-22",
+      "editorialReviewedAt": "2026-10-22",
+      "focus": "Kendi sunucunda ekip wikisi",
+      "effort": "PostgreSQL, Redis ve sürüm sınırları",
+      "media": []
+    },
+    "microsoft/markitdown": {
+      "title": "MarkItDown · Belgelerden Markdown çıkarma",
+      "what": "Çeşitli dosya türlerini Markdown metnine dönüştürmeye yönelik bir Python aracıdır.",
+      "use": "PDF ve ofis belgelerini metin işleme akışlarına hazırlamak için değerlendirilebilir.",
+      "audience": "Python tabanlı belge işleme veya metin analizi akışı kuran geliştiriciler.",
+      "limits": "Görsel yerleşimi birebir koruyan belge dönüşümü için tasarlanmış değildir. İşlem yetkileriyle kaynaklara erişir; güvenilmeyen girdiler ve isteğe bağlı bağımlılıklar ayrıca değerlendirilmelidir.",
+      "install": "README'deki güncel Python kurulumunu ve ihtiyaç duyduğun dosya türünün isteğe bağlı bağımlılıklarını incele. Burada komut çalıştırılmadı. Kurulum burada denenmedi.",
+      "sources": [
+        {
+          "label": "Resmî README · kapsam, kurulum ve güvenlik",
+          "url": "https://github.com/microsoft/markitdown#readme"
+        }
+      ],
+      "sourceCheckedAt": "2026-10-22",
+      "editorialReviewedAt": "2026-10-22",
+      "focus": "Çeşitli dosyalardan Markdown metni",
+      "effort": "Dosya türü bağımlılıkları ve girdi güvenliği",
+      "media": []
+    },
+    "ollama/ollama": {
+      "title": "Ollama · Model çalıştırma araçları",
+      "what": "Modellerle yerelde veya desteklenen bulut seçenekleriyle çalışmaya yönelik araçlar sunar.",
+      "use": "Model tabanlı uygulama geliştirmek ve yerel modelleri denemek için değerlendirilebilir.",
+      "audience": "Model seçimi, donanım ihtiyacı ve API entegrasyonunu değerlendirebilen geliştiriciler.",
+      "limits": "Projenin adı her işlemin yerel, çevrimdışı veya ücretsiz olduğunu garanti etmez. Seçilen modelin lisansını ve çalıştırma biçimini ayrı kontrol et; donanım ihtiyacı modele bağlıdır.",
+      "install": "Resmî README'de macOS, Windows, Linux ve Docker yolları bulunur. Uzak kurulum betiklerini incelemeden çalıştırma. Burada kurulum veya model testi yapılmadı. Kurulum burada denenmedi.",
+      "sources": [
+        {
+          "label": "Resmî README · platformlar ve kullanım",
+          "url": "https://github.com/ollama/ollama#readme"
+        }
+      ],
+      "sourceCheckedAt": "2026-10-22",
+      "editorialReviewedAt": "2026-10-22",
+      "focus": "Model çalıştırma ve API",
+      "effort": "Donanım, model lisansı ve yerel/bulut seçimi",
+      "media": []
+    },
+    "immich-app/immich": {
+      "title": "Immich · Fotoğraf ve video arşivi",
+      "what": "Kendi sunucunda fotoğraf ve video yönetimi sağlar.",
+      "use": "Mobil fotoğrafları kişisel arşivde toplamak ve görüntülemek.",
+      "audience": "Sunucu ve bağımsız yedek yönetimini üstlenebilen fotoğraf sahipleri.",
+      "limits": "Resmî README değerli dosyalar için 3-2-1 yedek planı önerir. Uygulamayı tek yedek olarak kullanma.",
+      "install": "README içindeki resmî kurulum gereksinimlerini kontrol et. Kurulum burada denenmedi.",
+      "sources": [
+        {
+          "label": "Resmî README · kapsam, kurulum ve koşullar",
+          "url": "https://github.com/immich-app/immich#readme"
+        }
+      ],
+      "sourceCheckedAt": "2026-10-22",
+      "editorialReviewedAt": "2026-10-22",
+      "focus": "Fotoğraf arşivi ve galeri",
+      "effort": "Sunucu ve ayrı yedek planı",
+      "media": [
+        {
+          "label": "Resmî demoyu aç · üçüncü taraf site",
+          "url": "https://demo.immich.app"
+        }
+      ]
+    },
+    "outline/outline": {
+      "title": "Outline · Ortak bilgi tabanı",
+      "what": "Ekipler için işbirlikli bir bilgi tabanıdır.",
+      "use": "Ekip dokümanlarını birlikte yazmak ve düzenlemek.",
+      "audience": "Bilgi tabanı işletmek isteyen ekipler.",
+      "limits": "Kaynak kod BSL 1.1 lisanslıdır; her kullanımın sınırsız açık kaynak iznine sahip olduğunu varsayma. Barındırılan hizmet ve kendi sunucunda kurulum farklı seçeneklerdir.",
+      "install": "README kurulum belgesini ve kimlik doğrulama gereksinimlerini izle. Kurulum burada denenmedi.",
+      "sources": [
+        {
+          "label": "Resmî README · kapsam, kurulum ve koşullar",
+          "url": "https://github.com/outline/outline#readme"
+        }
+      ],
+      "sourceCheckedAt": "2026-10-22",
+      "editorialReviewedAt": "2026-10-22",
+      "focus": "İşbirlikli ekip bilgi tabanı",
+      "effort": "BSL şartları ve barındırma kararı",
+      "media": []
+    },
+    "dani-garcia/vaultwarden": {
+      "title": "Vaultwarden · Parola kasası sunucusu",
+      "what": "Bitwarden istemci API’sinin Rust ile yazılmış alternatif sunucu uygulamasıdır.",
+      "use": "Uyumlu istemcilerle kendi parola kasanı barındırmak.",
+      "audience": "HTTPS, güncelleme ve yedekleme sorumluluğunu alabilen kullanıcılar.",
+      "limits": "Resmî Bitwarden ürünü değildir. Hassas sırları tutar; uyumluluk, yedek ve güvenlik yapılandırmasını ayrıca değerlendir.",
+      "install": "Resmî README konteyner kurulumunu önerir; wiki yapılandırmasını izle. Kurulum burada denenmedi.",
+      "sources": [
+        {
+          "label": "Resmî README · kapsam, kurulum ve koşullar",
+          "url": "https://github.com/dani-garcia/vaultwarden#readme"
+        }
+      ],
+      "sourceCheckedAt": "2026-10-22",
+      "editorialReviewedAt": "2026-10-22",
+      "focus": "Kendi parola kasanı barındırma",
+      "effort": "HTTPS, kurtarma ve yedek yönetimi",
+      "media": []
+    },
+    "louislam/uptime-kuma": {
+      "title": "Uptime Kuma · Servis izleme",
+      "what": "Kendi sunucunda çalıştırılabilen erişilebilirlik izleme aracıdır.",
+      "use": "HTTP, TCP ve diğer desteklenen servis kontrollerini izlemek.",
+      "audience": "Servislerinin çalışıp çalışmadığını takip eden yöneticiler.",
+      "limits": "Bir izleyicinin kendisi de kesilebilir. Bildirim kanalı ve izleme aralığı doğru yapılandırılmalıdır; gösterge kesintisizlik garantisi değildir.",
+      "install": "Resmî README’deki Docker Compose veya platform kurulumunu incele. Kurulum burada denenmedi.",
+      "sources": [
+        {
+          "label": "Resmî README · kapsam, kurulum ve koşullar",
+          "url": "https://github.com/louislam/uptime-kuma#readme"
+        }
+      ],
+      "sourceCheckedAt": "2026-10-22",
+      "editorialReviewedAt": "2026-10-22",
+      "focus": "Servis erişilebilirliğini izleme",
+      "effort": "İzleyici ve bildirim ayarlarını işletme",
+      "media": [
+        {
+          "label": "Resmî demoyu aç · üçüncü taraf site",
+          "url": "https://demo.kuma.pet/start-demo"
+        }
+      ]
+    },
+    "n8n-io/n8n": {
+      "title": "n8n · İş akışı otomasyonu",
+      "what": "Görsel iş akışlarını ve kod adımlarını birleştiren otomasyon platformudur.",
+      "use": "Desteklenen servisler arasında tekrarlanan işleri otomatikleştirmek.",
+      "audience": "Entegrasyon anahtarlarını ve iş akışı yetkilerini yönetebilen ekipler.",
+      "limits": "Fair-code / Sustainable Use ve Enterprise lisansları vardır; her kullanım ve özellik ücretsiz değildir. Bağlanan üçüncü taraf API’leri ayrıca ücretli olabilir.",
+      "install": "README’deki Docker yolunu ve lisans koşullarını kontrol et. Kurulum burada denenmedi.",
+      "sources": [
+        {
+          "label": "Resmî README · kapsam, kurulum ve koşullar",
+          "url": "https://github.com/n8n-io/n8n#readme"
+        }
+      ],
+      "sourceCheckedAt": "2026-10-22",
+      "editorialReviewedAt": "2026-10-22",
+      "focus": "Servisler arası otomasyon",
+      "effort": "Lisans, sırlar ve üçüncü taraf API maliyeti",
+      "media": []
+    },
+    "plausible/analytics": {
+      "title": "Plausible · Web analitiği",
+      "what": "Gizlilik odaklı web analitiği aracıdır; yönetilen bulut ve kendi sunucunda topluluk sürümü seçenekleri vardır.",
+      "use": "Web sitesi ziyaret ve kullanım istatistiklerini anlamak.",
+      "audience": "Daha sade bir analitik aracı isteyen site sahipleri.",
+      "limits": "Bulut ile topluluk sürümünün özellikleri ve işletim sorumlulukları aynı değildir. Ürünün gizlilik iddiaları sitenin kendiliğinden hukuka uyduğu anlamına gelmez.",
+      "install": "README’de gösterilen Community Edition ve bulut yollarını ayırarak incele. Kurulum burada denenmedi.",
+      "sources": [
+        {
+          "label": "Resmî README · kapsam, kurulum ve koşullar",
+          "url": "https://github.com/plausible/analytics#readme"
+        }
+      ],
+      "sourceCheckedAt": "2026-10-22",
+      "editorialReviewedAt": "2026-10-22",
+      "focus": "Site ziyaretlerini analiz etme",
+      "effort": "Bulut/topluluk farkı ve sunucu işletimi",
+      "media": [
+        {
+          "label": "Resmî demoyu aç · üçüncü taraf site",
+          "url": "https://plausible.io/plausible.io"
+        }
+      ]
+    },
+    "docling-project/docling": {
+      "title": "Docling · Yapısal belge işleme",
+      "what": "Belgeleri ayrıştırma, OCR ve yapılandırılmış çıktılar üretme araçları sunar.",
+      "use": "PDF gibi belgelerde düzen, tablolar ve metin çıkarma akışları kurmak.",
+      "audience": "Belge işleme hattı geliştiren teknik kullanıcılar.",
+      "limits": "Kodun MIT lisansı her modelin aynı lisansa sahip olduğu anlamına gelmez. OCR ve model seçenekleri ek indirme, kaynak ve yapılandırma gerektirebilir.",
+      "install": "Resmî README’deki Python kurulumunu ve model seçeneklerini incele. Kurulum burada denenmedi.",
+      "sources": [
+        {
+          "label": "Resmî README · kapsam, kurulum ve koşullar",
+          "url": "https://github.com/docling-project/docling#readme"
+        }
+      ],
+      "sourceCheckedAt": "2026-10-22",
+      "editorialReviewedAt": "2026-10-22",
+      "focus": "Yapısal ayrıştırma ve OCR",
+      "effort": "Model, bağımlılık ve kaynak gereksinimi",
+      "media": []
+    }
+  },
+  "detailed": {
+    "syncthing/syncthing": {
+      "checkedAt": "2026-10-23",
+      "installationTested": false,
+      "translation": "original-bilingual-editorial",
+      "tr": {
+        "what": "Seçtiğin klasördeki dosyaları, birbirine izin verdiğin cihazlarda aynı tutan bir uygulama.",
+        "use": "Bir bilgisayardaki değişiklikleri başka bir bilgisayara elle taşımadan aktarabilirsin.",
+        "example": "Dizüstündeki deneme klasörüne bir not ekle; eşleşmiş masaüstünde de görünsün.",
+        "effort": "İki cihazı eşleştirmen gerekir. İlk denemeyi önemli dosyalar yerine boş bir klasörle yap.",
+        "limits": "Bir dosyayı silmek diğer cihazda da silinmesine yol açabilir. Eşitleme, ayrı bir yedeğin yerine geçmez.",
+        "firstUse": "İlk kullanımda yalnızca deneme klasörünü paylaş. İçine önemsiz bir metin dosyası koy, iki cihazdaki Syncthing açıkken dosyanın diğer cihazda görünmesini bekle. Sonra dosyayı değiştirerek değişikliğin aktarılmasını izle. Önemli belgeleri taşımadan önce ayrı yedeğini al; silme işlemleri de eşitlenebilir."
+      },
+      "en": {
+        "what": "An application that keeps selected folders in sync between devices you explicitly pair.",
+        "use": "Move changes between your own computers without copying every file by hand.",
+        "example": "Add a note to a test folder on your laptop and look for it on your paired desktop.",
+        "effort": "You need to pair two devices. Start with an empty test folder, not important files.",
+        "limits": "Deleting a file may delete it on the other device too. Synchronisation is not an independent backup.",
+        "firstUse": "For first use, share only a test folder. Add an unimportant text file and keep Syncthing running on both devices until it appears on the other device. Edit the test file and check that the change is transferred. Back up important documents separately before adding them; deletions can synchronise too."
+      },
+      "paths": [
+        {
+          "os": "Windows",
+          "tr": {
+            "prerequisites": [
+              "İki bilgisayar, her ikisinde de internet/ağ bağlantısı ve programı çalıştırma izni.",
+              "Ayarlar → Sistem → Hakkında bölümünden işlemci türünü kontrol et. İndirmede bu türe uygun Windows paketini seç."
+            ],
+            "steps": [
+              "Aşağıdaki resmî indirme bağlantısını aç. İşletim sistemi ve işlemci türünle eşleşen paketi indir; emin değilsen rastgele bir paket seçme.",
+              "İndirilen sıkıştırılmış dosyayı sağ tık → Tümünü ayıkla ile bir klasöre çıkar. Klasördeki syncthing.exe dosyasını aç. Beklemediğin bir güvenlik uyarısını atlatmak için korumayı kapatma.",
+              "Tarayıcıda Syncthing yönetim sayfasının açılmasını bekle. Otomatik açılmazsa program çalışırken tarayıcının adres çubuğuna http://localhost:8384 yaz. Bu adres kendi bilgisayarındaki uygulamaya gider; Repo Atlas’a dosya yüklemez.",
+              "Aynı işlemi ikinci bilgisayarda yap. Her cihazda Actions → Show ID bölümündeki cihaz kimliğini bul. Add Remote Device ile diğer cihazın kimliğini ekle. İki tarafta da karşılıklı eşleştirme gerekir.",
+              "Add Folder ile yalnızca deneme için oluşturduğun klasörü seç ve eşleştirdiğin cihazla paylaş. Diğer cihazda gelen klasör paylaşımını kabul edip hedef klasörü seç.",
+              "Deneme klasörüne önemsiz bir metin dosyası koy. İki program da açıkken diğer cihazda görünmesini bekle."
+            ],
+            "success": "Deneme dosyası diğer cihazda görünür; eşitleme tamamlanınca klasör durumu Up to Date olur.",
+            "help": [
+              "Bağlanmıyorsa iki programın da açık olduğunu ve kimlikleri karşılıklı eklediğini kontrol et.",
+              "Bu taşınabilir programı çalıştırmak, Windows başlangıcında otomatik açılacağını garanti etmez. Başlangıç ayarlarını ayrıca resmî belgelerden incele."
+            ]
+          },
+          "en": {
+            "prerequisites": [
+              "Two computers with network access and permission to run applications.",
+              "Check the processor type in Settings → System → About and select the matching Windows download."
+            ],
+            "steps": [
+              "Open the official download link below. Download the Windows package matching your processor; do not guess if you are unsure.",
+              "Right-click the downloaded archive → Extract All. Open syncthing.exe from the extracted folder. Do not disable security protection to bypass an unexpected warning.",
+              "Wait for the management page to open in your browser. If it does not, type http://localhost:8384 into the address bar while Syncthing is running. This opens your own computer’s application; it does not upload files to Repo Atlas.",
+              "Repeat on the second computer. On each device use Actions → Show ID to find its device ID, then Add Remote Device to add the other computer. Pairing must be mutual.",
+              "Use Add Folder to select a new test folder and share it with the paired device. Accept the folder invitation on the other device and choose its destination.",
+              "Put an unimportant text file in the test folder. Keep both programs running and wait for it to appear on the other computer."
+            ],
+            "success": "The test file appears on the other device and the folder eventually shows Up to Date.",
+            "help": [
+              "If it does not connect, check that both programs are running and each device has added the other’s ID.",
+              "Running this portable program does not guarantee automatic startup with Windows. See the official documentation for startup options."
+            ]
+          },
+          "commands": {}
+        }
+      ],
+      "sources": [
+        [
+          "https://syncthing.net/downloads/",
+          "İndir",
+          "Download"
+        ],
+        [
+          "https://docs.syncthing.net/intro/getting-started.html",
+          "Başlangıç belgesi",
+          "Getting started"
+        ],
+        [
+          "https://docs.syncthing.net/users/faq.html",
+          "Eşitleme ve yedekleme",
+          "Sync and backups"
+        ]
+      ]
+    },
+    "ollama/ollama": {
+      "checkedAt": "2026-10-23",
+      "installationTested": false,
+      "translation": "original-bilingual-editorial",
+      "tr": {
+        "what": "Yapay zekâ modellerini bilgisayarına indirip çalıştırabilen bir uygulama. Model, yanıt üretmek için kullanılan büyük bir veri dosyası gibi düşünülebilir.",
+        "use": "Kendi bilgisayarının gücüyle bir yapay zekâ modeline soru sorabilirsin.",
+        "example": "Kişisel bilgi vermeden “Bu paragrafı daha sade anlat” gibi bir deneme yap.",
+        "effort": "Programın yanında model de indirilir. Depolama, bellek ve işlemci ihtiyacı modele göre değişir; her bilgisayar her modeli çalıştıramaz.",
+        "limits": "Yerel çalıştırma ile bulut seçenekleri aynı değildir. Seçtiğin modelin nerede çalıştığını ve lisansını kontrol et. Yanıtlar hatalı olabilir; doğruluğu garanti edilmez.",
+        "firstUse": "Programın kurulması bir modelin de hazır olduğu anlamına gelmez. Aşağıdaki resmî model kitaplığından bilgisayarına uygun bir model seç; indirme boyutunu, lisansını ve modelin kendi kullanım adımlarını kontrol et. İlk denemede kişisel bilgi içermeyen kısa bir soru sor. Yerel model ile bulut modelini karıştırma; bu rehber belirli bir modelin bilgisayarında çalışacağını garanti etmez."
+      },
+      "en": {
+        "what": "An application that can download and run AI models on your computer. Think of a model as a large data file used to generate responses.",
+        "use": "Ask an AI model questions using your own computer’s processing power.",
+        "example": "Without sharing personal information, try asking it to explain a short paragraph in simpler words.",
+        "effort": "You download a model as well as the application. Storage, memory and processing needs depend on the model; not every computer can run every model.",
+        "limits": "Local execution and cloud options are different. Check where your selected model runs and its licence. Responses can be wrong.",
+        "firstUse": "Installing the application does not mean a model is ready. Choose a suitable model in the official library below and check its download size, licence and own usage instructions. For your first test ask a short question without personal information. Distinguish local and cloud models; this guide does not guarantee that a particular model will run on your computer."
+      },
+      "paths": [
+        {
+          "os": "Windows",
+          "tr": {
+            "prerequisites": [
+              "Windows 10 22H2 veya daha yeni sürüm; indirme için internet.",
+              "Resmî Windows belgesine göre uygulama kurulumu için en az 4 GB boş alan gerekir. Modeller bunun dışında ek alan ister; indirmeden önce boyutu kontrol et."
+            ],
+            "steps": [
+              "Resmî indirme sayfasında Windows sürümünü seç; OllamaSetup.exe yükleyicisini indir.",
+              "İndirilen yükleyiciyi aç ve kurulum penceresindeki adımları tamamla. Windows sürümü normalde kendi kullanıcı hesabına kurulur; yönetici yetkisi gerektirmez.",
+              "Başlat menüsünden Ollama’yı aç. Ardından Başlat menüsüne PowerShell yazıp Windows PowerShell’i aç. Bu pencere, aşağıdaki komutu yazacağın yerdir.",
+              "Aşağıdaki komutu yazıp Enter’a bas. Bu komut kurulu programın sürümünü gösterir; model indirmez ve ücretli hizmet başlatmaz.",
+              "Model seçmek için aşağıdaki resmî model kitaplığını incele. Boyutunu, lisansını ve bilgisayarına uygunluğunu kontrol et; ardından ilgili modelin resmî kullanım adımını izle."
+            ],
+            "success": "Komut bir Ollama sürüm numarası döndürür. Bu yalnızca programın kurulu olduğunu gösterir; modelin başarıyla çalıştığı anlamına gelmez.",
+            "help": [
+              "“ollama tanınmıyor” hatasında PowerShell’i kapatıp yeniden aç. Kurulumu tamamladığını kontrol et.",
+              "Model yavaşsa veya bellek hatası veriyorsa daha küçük bir modeli değerlendirmeden önce resmî gereksinimleri incele."
+            ]
+          },
+          "en": {
+            "prerequisites": [
+              "Windows 10 22H2 or later and internet access for downloads.",
+              "The Windows documentation requires at least 4 GB free for the application. Models need additional space; check the model size before downloading."
+            ],
+            "steps": [
+              "Choose Windows on the official download page and download OllamaSetup.exe.",
+              "Open the installer and complete its prompts. The standard Windows installation uses your account and does not require administrator rights.",
+              "Open Ollama from the Start menu. Then search for PowerShell in Start and open Windows PowerShell. This is where you type the command below.",
+              "Type the command below and press Enter. It shows the installed application version; it does not download a model or activate a paid service.",
+              "Use the official model library below to choose a model. Check its size, licence and suitability for your computer, then follow that model’s official usage instructions."
+            ],
+            "success": "The command prints an Ollama version. This only verifies the application is installed, not that a model can run successfully.",
+            "help": [
+              "If “ollama is not recognised” appears, close and reopen PowerShell and check that installation completed.",
+              "If a model is slow or runs out of memory, check its official requirements before trying a smaller model."
+            ]
+          },
+          "commands": {
+            "3": "ollama --version"
+          }
+        },
+        {
+          "os": "macOS",
+          "tr": {
+            "prerequisites": [
+              "macOS Sonoma 14 veya üstü. Apple M serisinde CPU/GPU desteği; Intel Mac’te yalnızca CPU desteği.",
+              "Model dosyaları için ek boş alan gerekir. Modeli indirmeden önce boyutunu kontrol et."
+            ],
+            "steps": [
+              "Resmî indirme bağlantısından Mac sürümünü indir ve ollama.dmg dosyasını aç.",
+              "Ollama simgesini Applications / Uygulamalar klasörüne sürükle. Uygulamalar’dan Ollama’yı aç.",
+              "Komut satırı bağlantısı oluşturma izni sorulursa, resmî olarak indirdiğin uygulamaya ait olduğundan emin ol. Spotlight aramasından Terminal’i aç. Terminal, kısa metin komutlarının yazıldığı uygulamadır.",
+              "Aşağıdaki komutu yazıp Enter’a bas. Yalnızca sürümü kontrol eder; model indirmez.",
+              "İlk model için resmî kitaplıktan bilgisayarına uygun bir model seç. Lisansını ve dosya boyutunu kontrol ederek o modelin resmî adımlarını izle."
+            ],
+            "success": "Terminal bir sürüm numarası gösterir. Model kurulumu ve yanıt üretmesi ayrı bir sonraki adımdır.",
+            "help": [
+              "Komut bulunamazsa Ollama’nın açık olduğunu ve komut satırı bağlantısı iznini kontrol et.",
+              "Model çalışmıyorsa modeli tekrar tekrar indirmeden önce resmî donanım gereksinimlerine bak."
+            ]
+          },
+          "en": {
+            "prerequisites": [
+              "macOS Sonoma 14 or later. Apple M-series supports CPU/GPU; Intel Macs use CPU only.",
+              "Allow additional space for model files and check the model size before downloading."
+            ],
+            "steps": [
+              "Download the Mac version from the official link and open ollama.dmg.",
+              "Drag Ollama into Applications, then open it from Applications.",
+              "If asked to create a command-line link, verify the request belongs to the official app you downloaded. Open Terminal using Spotlight; Terminal is the app where you type short text commands.",
+              "Type the command below and press Enter. This checks the version without downloading a model.",
+              "For your first model choose a suitable model in the official library. Check its licence and download size, then follow its official instructions."
+            ],
+            "success": "Terminal prints a version number. Installing a model and generating a response are separate next steps.",
+            "help": [
+              "If the command is not found, check that Ollama is open and its command-line link was allowed.",
+              "If a model fails, check official hardware requirements before repeatedly downloading it."
+            ]
+          },
+          "commands": {
+            "3": "ollama --version"
+          }
+        }
+      ],
+      "sources": [
+        [
+          "https://ollama.com/download",
+          "İndir",
+          "Download"
+        ],
+        [
+          "https://docs.ollama.com/windows",
+          "Windows belgesi",
+          "Windows documentation"
+        ],
+        [
+          "https://docs.ollama.com/macos",
+          "macOS belgesi",
+          "macOS documentation"
+        ],
+        [
+          "https://ollama.com/library",
+          "Model kitaplığı",
+          "Model library"
+        ]
+      ]
+    },
+    "microsoft/markitdown": {
+      "checkedAt": "2026-10-23",
+      "installationTested": false,
+      "translation": "original-bilingual-editorial",
+      "tr": {
+        "what": "PDF ve Office gibi çeşitli dosyalardaki metni Markdown denen düz metin biçimine dönüştüren bir araç.",
+        "use": "Belgeleri metin olarak incelemek veya sonraki işlemlere hazırlamak için kullanabilirsin.",
+        "example": "İçinde seçilebilir metin bulunan, gizli bilgi içermeyen küçük bir PDF’yi metne dönüştür.",
+        "effort": "Bu, çift tıklayıp kullanılan bir masaüstü uygulaması değil. Python kurulumu ve komut penceresi kullanımı gerekir; diğer örneklere göre daha teknik.",
+        "limits": "Belgenin sayfa tasarımı aynen korunmaz. Taranmış PDF’ler ve bazı dosya türleri ek araç gerektirebilir. İsteğe bağlı bulut/AI özellikleri ek ücret veya veri aktarımı getirebilir; bu rehber onları etkinleştirmez.",
+        "firstUse": "Yukarıdaki kurulum bölümünde hazırladığın deneme klasörünü kullan. Gizli bilgi içermeyen, seçilebilir metni olan bir PDF kopyasını example.pdf adıyla koy. Gösterilen dönüştürme komutuyla document.md üret; bu adla dosya zaten varsa önce farklı çıktı adı seç. Sonucu Not Defteri ile açıp kaynak PDF ile karşılaştır. Taranmış görüntü veya karmaşık düzenlerde eksik metin olabilir."
+      },
+      "en": {
+        "what": "A tool that converts text in files such as PDFs and Office documents into a plain-text format called Markdown.",
+        "use": "Read documents as text or prepare them for further processing.",
+        "example": "Convert a small PDF containing selectable text and no sensitive information.",
+        "effort": "This is not a point-and-click desktop app. It requires Python and a command window, making it more technical than the other examples.",
+        "limits": "Page layout is not preserved exactly. Scanned PDFs and some formats may need extra tools. Optional cloud/AI features may involve charges or data transfer; this guide does not enable them.",
+        "firstUse": "Use the test folder prepared in the installation steps above. Copy a non-sensitive PDF containing selectable text into it as example.pdf. Use the displayed conversion command to create document.md; choose another output name if that file already exists. Open the result in Notepad and compare it with the PDF. Scanned images and complex layouts may produce incomplete text."
+      },
+      "paths": [
+        {
+          "os": "Windows",
+          "tr": {
+            "prerequisites": [
+              "Python 3.10–3.14 gerekir; bu aralığın dışındaki bir sürümü otomatik olarak uygun sayma.",
+              "Python yoksa aşağıdaki resmî Python bağlantısından desteklenen sürümü kur. Kurulum seçenekleri sürüme göre değişebilir; resmî Windows yardımını izle.",
+              "Yalnızca deneme dosyaları için yeni ve boş bir klasör oluştur. Dosya Gezgini’nde o klasörü aç; adres çubuğuna powershell yazıp Enter’a bas. Komutları açılan pencerede, sırayla çalıştır."
+            ],
+            "steps": [
+              "Python sürümünü kontrol et. Çıktı 3.10–3.14 aralığında değilse sonraki adıma geçme. Komut bulunmuyorsa önce Python kurulumunu düzelt.",
+              "Bu klasörde .venv adlı ayrı bir araç ortamı oluştur. Böylece bu denemenin Python paketleri diğer projelerinkilerle karışmaz.",
+              "MarkItDown’ı bu ayrı ortama kur. Komut internetten paket indirir. [all], isteğe bağlı dönüştürme bağımlılıklarını da kurduğu için indirme daha büyük olabilir; bulut hizmeti aboneliği başlatmaz.",
+              "Gizli bilgi içermeyen bir PDF’nin kopyasını bu klasöre koy ve example.pdf adını ver. Aynı yerde document.md varsa önce farklı bir ad seç; çıktı dosyasının üzerine yazılabilir. Dönüştürme komutunu çalıştır.",
+              "Oluşan document.md dosyasını Not Defteri ile aç. Kaynak PDF’deki birkaç cümleyle karşılaştır; eksik veya bozuk metin bulunabilir."
+            ],
+            "success": "Klasörde document.md oluşur ve metin içerir. Bu, tüm belgelerin kusursuz dönüştürüleceği anlamına gelmez.",
+            "help": [
+              "Python bulunamıyorsa PATH adı verilen komut arama ayarına takılmış olabilirsin. Rastgele yönetici komutları denemek yerine resmî Windows/Python yardımını izle.",
+              "Dosya bulunamadı hatasında PowerShell’in deneme klasöründe açık olduğunu ve example.pdf dosya adını kontrol et.",
+              "Boş çıktı, taranmış görüntüden oluşan PDF’ye işaret edebilir. OCR veya ücretli AI hizmetini otomatik açmak yerine önce resmî desteklenen biçimler bölümünü incele."
+            ]
+          },
+          "en": {
+            "prerequisites": [
+              "Requires Python 3.10–3.14; do not assume versions outside this range are supported.",
+              "If Python is missing, install a supported version from the official Python link. Installer options vary; follow the official Windows instructions.",
+              "Create a new empty folder for test files. Open it in File Explorer, type powershell in its address bar and press Enter. Run the following commands in order in that window."
+            ],
+            "steps": [
+              "Check the Python version. If the output is not between 3.10 and 3.14, stop here. If the command is missing, fix the Python installation first.",
+              "Create a separate tool environment named .venv in this folder. This keeps these Python packages separate from those of other projects.",
+              "Install MarkItDown into that environment. This downloads packages from the internet. [all] also installs optional conversion dependencies, so the download may be larger; it does not subscribe you to a cloud service.",
+              "Copy a non-sensitive PDF into this folder and name the copy example.pdf. If document.md already exists, choose a different output name first: output may be overwritten. Run the conversion command.",
+              "Open the resulting document.md in Notepad. Compare a few sentences with the source PDF; text may be missing or imperfect."
+            ],
+            "success": "document.md appears in the folder and contains text. This does not guarantee perfect conversion for all documents.",
+            "help": [
+              "If Python cannot be found, its command search path may not be configured. Follow the official Python/Windows help instead of trying arbitrary administrator commands.",
+              "For a file-not-found error, check that PowerShell is open in your test folder and that the file is named example.pdf.",
+              "An empty result may mean the PDF contains scanned images. Check the official supported formats instead of automatically enabling OCR or a paid AI service."
+            ]
+          },
+          "commands": {
+            "0": "python --version",
+            "1": "python -m venv .venv",
+            "2": ".\\.venv\\Scripts\\python.exe -m pip install \"markitdown[all]\"",
+            "3": ".\\.venv\\Scripts\\markitdown.exe example.pdf -o document.md"
+          }
+        }
+      ],
+      "sources": [
+        [
+          "https://github.com/microsoft/markitdown#readme",
+          "Resmî kurulum ve kullanım",
+          "Official installation and usage"
+        ],
+        [
+          "https://www.python.org/downloads/",
+          "Python indir",
+          "Download Python"
+        ],
+        [
+          "https://docs.python.org/3/using/windows.html",
+          "Python Windows yardımı",
+          "Python for Windows"
+        ]
+      ]
+    }
+  }
+}
