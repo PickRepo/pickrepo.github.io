@@ -1,0 +1,5 @@
+# PickRepo robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://pickrepo.github.io/sitemap.xml
