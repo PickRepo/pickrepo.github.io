@@ -31,6 +31,12 @@
   const TEXT = {
     tr: {
       localeLabel: "Dil",
+      heroEyebrow: "Açık kaynak dünyasına yeni bir bakış",
+      heroBrowse: "Projeleri keşfet",
+      heroNote: "Her gün yenilenir · Ücretsiz · Hesap gerekmez",
+      heroStatCollections: "Keşif listesi",
+      heroStatRepositories: "Açık repo",
+      heroStatGuides: "Kaynaklı rehber",
       views: { trending: "Yükselenler", popular: "Popüler", early: "Erken keşif", guides: "Kaynaklı rehberler" },
       viewDescriptions: {
         trending: "Son 7 günde oluşturulan herkese açık depolar; toplam yıldız sayısına göre sıralanır. Haftalık yıldız artışı ölçülmez.",
@@ -65,7 +71,6 @@
       resultCount: (count) => count + " proje",
       unspecified: "Belirtilmemiş",
       noLicense: "GitHub’da belirtilmemiş",
-      repoKicker: "GitHub projesi",
       scoreLabel: "PickRepo keşif puanı",
       sourceDescription: "GitHub açıklaması · özgün dil",
       noDescription: "GitHub açıklaması eklenmemiş; ayrıntılar için kaynak depoyu inceleyin.",
@@ -78,7 +83,7 @@
       fallbackInstall: "Kurulum adımları proje sahibinin resmî README’sindedir. Bu sitede kurulum denenmedi; komutları çalıştırmadan önce kaynağı inceleyin.",
       officialReadme: "README / resmî kaynak ↗",
       guideLink: "Kaynaklı rehber ↗",
-      screenshotCaption: "README’deki resmî proje görseli",
+      screenshotCaption: "Resmî depo görseli",
       illustrationCaption: "Temsili illüstrasyon · ekran görüntüsü değil",
       artLabel: "için temsili illüstrasyon",
       facts: { created: "Oluşturulma", updated: "Son değişiklik", stars: "Toplam yıldız", forks: "Fork", license: "Lisans", topics: "GitHub konuları" },
@@ -95,6 +100,12 @@
     },
     en: {
       localeLabel: "Language",
+      heroEyebrow: "A fresh lens on open source",
+      heroBrowse: "Explore projects",
+      heroNote: "Updated daily · Free · No account",
+      heroStatCollections: "Discovery lists",
+      heroStatRepositories: "Public repositories",
+      heroStatGuides: "Source-based guides",
       views: { trending: "Trending", popular: "Popular", early: "Early finds", guides: "Source-based guides" },
       viewDescriptions: {
         trending: "Public repositories created in the last 7 days, sorted by total stars. Weekly star growth is not measured.",
@@ -129,7 +140,6 @@
       resultCount: (count) => count + (count === 1 ? " project" : " projects"),
       unspecified: "Unspecified",
       noLicense: "Not specified on GitHub",
-      repoKicker: "GitHub repository",
       scoreLabel: "PickRepo discovery score",
       sourceDescription: "GitHub description · original language",
       noDescription: "No GitHub description is provided. Open the source repository for details.",
@@ -142,7 +152,7 @@
       fallbackInstall: "Follow the project owner’s official README. Installation was not tested on this site; review commands before running them.",
       officialReadme: "README / official source ↗",
       guideLink: "Source-based guide ↗",
-      screenshotCaption: "Official project image from its README",
+      screenshotCaption: "Official repository image",
       illustrationCaption: "Illustrative artwork · not a screenshot",
       artLabel: "illustrative artwork for",
       facts: { created: "Created", updated: "Last update", stars: "Total stars", forks: "Forks", license: "License", topics: "GitHub topics" },
@@ -447,9 +457,8 @@
     const guideInstallNote = guideSummary ? " <a class=\"inline-guide-link\" href=\"/guide/" + escapeHTML(guideSlug) + ".html\">" + escapeHTML(t.guideLink) + "</a>" : "";
 
     return '<article class="project-card">' +
-      '<div class="project-card-top"><span class="rank-number">' + (index + 1) + '.</span>' +
-      '<div class="project-title-wrap"><span class="project-kicker">' + escapeHTML(t.repoKicker) + '</span>' +
-      '<h2 class="project-title"><a href="' + escapeHTML(githubURL) + '" target="_blank" rel="noopener noreferrer">' + escapeHTML(owner) + ' / <strong>' + escapeHTML(name) + '</strong></a></h2></div>' +
+      '<div class="project-card-top"><span class="rank-number" aria-label="' + escapeHTML((activeLocale === "en" ? "Rank " : "Sıra ") + (index + 1)) + '">' + (index + 1) + '</span>' +
+      '<div class="project-title-wrap"><h2 class="project-title"><a href="' + escapeHTML(githubURL) + '" target="_blank" rel="noopener noreferrer">' + escapeHTML(owner) + ' / <strong>' + escapeHTML(name) + '</strong></a></h2></div>' +
       '<div class="project-score"><span>' + escapeHTML(t.scoreLabel) + '</span><strong>' + result.score + '<small>/100</small></strong></div></div>' +
       '<div class="project-card-content">' + visualMarkup(repo) + '<div class="project-summary">' +
       '<span class="source-description-label">' + escapeHTML(t.sourceDescription) + '</span><p class="project-description">' + escapeHTML(displayDescription) + '</p>' +
@@ -517,7 +526,7 @@
       return true;
     });
 
-    const sortMode = sortSelect ? sortSelect.value : "match";
+    const sortMode = sortSelect ? sortSelect.value : "stars";
     const scored = filtered.map((repo) => ({ repo, result: scoreRepo(repo, query) }));
     scored.sort((a, b) => {
       if (sortMode === "stars") return (Number(b.repo.stargazers_count) || 0) - (Number(a.repo.stargazers_count) || 0);
@@ -544,6 +553,12 @@
     if (document.documentElement) document.documentElement.lang = activeLocale;
     const ids = {
       localeLabel: t.localeLabel,
+      heroEyebrow: t.heroEyebrow,
+      heroBrowse: t.heroBrowse,
+      heroNote: t.heroNote,
+      heroStatCollections: t.heroStatCollections,
+      heroStatRepositories: t.heroStatRepositories,
+      heroStatGuides: t.heroStatGuides,
       searchLabel: t.searchLabel,
       languageLabel: t.languageLabel,
       topicLabel: t.topicLabel,
