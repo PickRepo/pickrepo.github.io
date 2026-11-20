@@ -1,0 +1,60 @@
+name: Refresh and publish PickRepo
+
+on:
+  push:
+    branches: ["main"]
+  schedule:
+    # Every day at 07:15 UTC (10:15 in Istanbul, UTC+3).
+    - cron: "15 7 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Refresh repository lists from the public GitHub API
+        run: python scripts/update-catalog.py
+
+      - name: Find official repository images
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/prepare-repo-media.py
+
+      - name: Build the static site
+        run: python scripts/build-site.py
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload the generated site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Publish to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
